@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto, Japan</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bg-image {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .jumbotron {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .card {
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-primary {
+            background-color: #ff5733;
+            border-color: #ff5733;
+        }
+
+        .btn-primary:hover {
+            background-color: #c70039;
+            border-color: #c70039;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Kyoto, Japan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="places.html">Tourist Spots</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center bg-image" style="background-image: url('https://imgur.com/ky3BAOL.jpg'); height: 500px;">
+        <h1 class="display-4">
+            <span class="konichiwa-text">Konichiwa!</span> Welcome to Kyoto
+        </h1>
+        <p class="lead">Explore the heart of Japan's cultural heritage.</p>
+        <a class="btn btn-primary btn-lg" href="places.html" role="button">Discover More</a>
+    </div>
+
+    <section class="container py-5">
+        <h2 class="text-center">Why Kyoto?</h2>
+        <p class="text-center">Kyoto is a city on the island of Honshu, known for its classical Buddhist temples, as well
+            as gardens, imperial palaces, Shinto shrines, and traditional wooden houses.</p>
+        <div class="row equal-height">
+    <div class="col-md-4 d-flex">
+        <div class="card">
+            <img src="https://imgur.com/sl4Mrvw.jpg" class="card-img-top" alt="Golden Pavilion">
+            <div class="card-body">
+                <h5 class="card-title">Golden Pavilion</h5>
+                <p class="card-text">Kinkaku-ji, or the Golden Pavilion, is a stunning temple covered in gold leaf.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex">
+        <div class="card">
+            <img src="https://imgur.com/ESNcxi4.jpg" class="card-img-top" alt="Kiyomizu-dera">
+            <div class="card-body">
+                <h5 class="card-title">Kiyomizu-dera</h5>
+                <p class="card-text">An iconic temple on a hill with a grand wooden stage overlooking the city.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex">
+        <div class="card">
+            <img src="https://imgur.com/eq6cNsn.jpg" class="card-img-top" alt="Zen Garden" style="height: 62%;">
+            <div class="card-body">
+                <h5 class="card-title">Zen Gardens</h5>
+                <p class="card-text">Kyoto is home to beautiful Zen gardens, offering serenity and peace.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>© 2024 Kyoto Travel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
