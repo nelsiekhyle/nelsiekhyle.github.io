@@ -1,145 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nelsie's Portfolio</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nelsie's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+      body {
+          background-color: #000;
+          color: #fff;
+          font-family: 'Poppins', sans-serif;
+          height: 100vh;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
 
-    <style>
-        body {
-            background: linear-gradient(to bottom, #fce4ec, #f8bbd0); 
-            color: #333;
-            font-family: 'Poppins', sans-serif;
-            padding-top: 50px;
-            overflow-x: hidden;
-        }
+      .profile-pic {
+          max-width: 150px;
+          border-radius: 50%;
+          border: 3px solid #ff4d6d;
+          margin-bottom: 20px;
+      }
 
-        h1, h2 {
-            color: #ff66b2;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-        }
+      h1 {
+          font-size: 3rem;
+          font-weight: bold;
+          color: #ff4d6d;
+      }
 
-        .btn-custom {
-            background-color: #ff66b2; 
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-weight: bold;
-            border-radius: 30px;
-            transition: all 0.3s ease-in-out;
-        }
+      h2 {
+          font-size: 1.5rem;
+          color: #bbb;
+          margin-bottom: 20px;
+      }
 
-        .btn-custom:hover {
-            background-color: #ff4081; 
-            transform: scale(1.1);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
+      .btn-custom {
+          background-color: #ff4d6d;
+          color: #fff;
+          padding: 10px 25px;
+          border-radius: 30px;
+          text-decoration: none;
+          font-size: 1rem;
+          transition: 0.3s;
+      }
 
-        .card-title {
-            color: #ff66b2;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-        }
+      .btn-custom:hover {
+          background-color: #ff1e48;
+          transform: scale(1.05);
+      }
 
-        .card {
-            margin-bottom: 30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            border: none;
-            background-color: #fff;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-        }
+      .social-icons a {
+          color: #fff;
+          font-size: 1.5rem;
+          margin: 0 10px;
+          transition: 0.3s;
+      }
 
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
+      .social-icons a:hover {
+          color: #ff4d6d;
+      }
 
-        .card-body {
-            flex-grow: 1;
-            text-align: center;
-            padding: 30px;
-        }
+      footer {
+          text-align: center;
+          color: #888;
+          font-size: 0.9rem;
+          margin-top: 20px;
+      }
 
-        footer {
-    padding: 20px 0;
-    text-align: center;
-    background-color: #ffb3d9; 
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 600;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px; 
-}
+      @media (max-width: 768px) {
+          h1 {
+              font-size: 2rem;
+          }
 
-        .lead {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #ff4081; 
-        }
+          h2 {
+              font-size: 1.2rem;
+          }
 
-        .container {
-            max-width: 1200px;
-        }
-
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .card {
-            animation: fadeInUp 0.6s ease-out;
-        }
-    </style>
+          .btn-custom {
+              font-size: 0.9rem;
+              padding: 8px 20px;
+          }
+      }
+  </style>
 </head>
 <body>
-    <div class="container text-center">
-        <div class="py-5 text-center" style="background-color: #ffe0f0; border-radius: 20px; margin-bottom: 50px;">
-            <h2 class="display-4">Hi, I'm Nelsie Khyle!</h2>
-            <p class="lead">Welcome to my portfolio, where I showcase my creative projects and work.</p>
-        </div>
-    </div>
-
-    <div id="projects" class="container mt-5">
-        <h2 class="text-center mb-5">My Projects</h2>
-        <div class="row justify-content-center">
-
-                <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Kyoto Japan</h5>
-                        <p class="card-text">This project showcases my exploration of Kyoto, Japan using modern web design with Bootstrap.</p>
-                        <a href="Act2/index.html" class="btn btn-custom">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Dog Breeds API</h5>
-                        <p class="card-text">This project uses a public API to fetch and display a list of dog breeds in a stylish, responsive layout.</p>
-                        <a href="Act4/index.html" class="btn btn-custom">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>SAM Portfolio | by Nelsie Khyle Reyes</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="text-center">
+      <img src="https://i.imgur.com/wnIL0q0.jpg" alt="Profile Picture" class="img-fluid profile-pic">
+      <h1>Hi, I'm Nelsie</h1>
+      <h2>IT Student</h2>
+      <p>Welcome to my portfolio, where I showcase my creative projects and work.</p>
+      <a href="project.html" class="btn btn-custom">My Projects</a>
+      <div class="social-icons mt-4">
+          <a href="https://facebook.com/nelsiekhyle" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://twitter.com/nelsiekhyle" target="_blank"><i class="bi bi-twitter"></i></a>
+          <a href="https://instagram.com/nelsiekhyle" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+  </div>
+  <footer>
+      <p>SAM Projects | by Nelsie Khyle Reyes</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
